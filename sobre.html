@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honest</title>
+
+
+    <!-- adicionando o css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./css/sobre.css" rel="stylesheet">
+
+
+    
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="index.html">Honest Games</a>
+            <!-- Hamburger button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Honest</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link  mx-lg-2 active " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="sobre.html">Sobre</a>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="mgames.html">Mundo dos Games</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <br> <br>
+    <!--Fim navbar-->
+
+      <!--inicio carrossel-->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/img1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/img2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/img3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--fim carrossel-->
+<!--Inicio cards-->
+<div class="d-flex justify-content-center align-items-center flex-wrap gap-3" style="min-height: 100vh;">
+    <div class="card" style="width: 16rem;">
+        <img src="./img/logo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Honest Games</h5>
+            <p class="card-text">Somos uma empresa de jogos que pesquisa sobre consoles e games atuais!</p>
+            <a href="index.html" class="btn btn-primary">Voltar ao Menu</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 20rem;">
+        <img src="./img/img1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Consoles e Games</h5>
+            <p class="card-text">Veja os consoles</p>
+            <a href="mgames.html" class="btn btn-primary">Clique Aqui!</a>
+        </div>
+    </div>
+</div>
+
+    <!--Fim cards-->
+
+
+ <!--inicio footer-->
+
+    <!-- Link do Mapbox CSS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        #map {
+            width: 100%;
+            /* Ajuste a largura do mapa */
+            height: 300px;
+            /* Ajuste a altura do mapa */
+        }
+    </style>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Honest</h1>
+                <p>Isso é sobre sonhos.</p>
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Novidades</h3>
+                </li>
+                <li>
+                    <a href="mgames.html" class="footer-link">Games</a>
+                </li>
+                <li>
+                    <a href="mgames.html" class="footer-link">Consoles</a>
+                </li>
+                <li>
+                    <a href="sobre.html" class="footer-link">Sobre</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Veja Novamente!</h3>
+                </li>
+                <li>
+                    <a href="index.html" class="footer-link">Home </a>
+                </li>
+                <li>
+                    <a href="mgames.html" class="footer-link">Mundo dos Games</a>
+                </li>
+                <li>
+                    <a href="sobre.html" class="footer-link">Sobre Nós</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Inscreva-se</h3>
+                <p>Coloque seu e-mail para receber novas informações</p>
+                <div id="input_group">
+                    <input type="email" id="email" placeholder="Seu e-mail">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="footer_copyright">
+
+            <!-- Div para o mapa -->
+            <div id="google-map" style="margin: 2rem 0;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.471657399883!2d-46.692274325022694!3d-23.515532559909417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef81351f6abd7%3A0x8c24727948e784e!2sCol%C3%A9gio%20Objetivo%20Marqu%C3%AAs!5e0!3m2!1spt-BR!2sbr!4v1729380304461!5m2!1spt-BR!2sbr"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <br>
+                &#169; 2024 all rights reserved
+            </div>
+    </footer>
+
+    <!--fim footer-->
+
+
+    <!-- adicionando o js bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
